@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Fraunces";
+  src: url("../assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
+    format("truetype-variations");
+  font-weight: 600;
+  font-stretch: 50% 200%;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../assets/fonts/manrope/Manrope-VariableFont_wght.ttf")
+    format("truetype-variations");
+  font-weight: 400;
+  font-stretch: 50% 200%;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --dark-purple: #24053e;
+  --eucaplyptus: #44ffa1;
+  --davys-grey: #584d62;
+  --ghost-white: #fcf8ff;
+  --white: #fff;
+  /* Fonts */
+  --heading-font: "Fraunces", serif;
+  --body-font: "Manrope", sans-serif;
+
+  --transition: 0.3s ease-in-out all;
+}
+body {
+  font-family: var(--body-font);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font);
+}
+
+/* global classes */
+
+.heading-L {
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 80px;
+}
+.heading-M {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 64px;
+}
+.heading-S {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+}
+.body-font {
+  font-family: var(--body-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.btn {
+  cursor: pointer;
+
+  font-family: var(--body-font);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.18px;
+  transition: var(--transition);
+}
+
+.primary-btn {
+  border: 2px solid transparent;
+  background: var(--eucaplyptus);
+  color: var(--dark-purple);
+  padding: 13px 24px 16px;
+}
+
+.primary-btn:hover {
+  background: transparent;
+  color: var(--eucaplyptus);
+  border: 2px solid var(--eucaplyptus);
+}
+
+.secondary-btn {
+  border: none;
+  border-bottom: 3px solid var(--eucaplyptus);
+  background: transparent;
+  color: var(--white);
+}
+.secondary-btn:hover {
+  color: var(--eucaplyptus);
+}
+
+/* Main styles */
+.rectangle {
+  margin: 10rem auto;
+  width: 600px;
+  height: 480px;
+  background-color: #eaeaea;
+  clip-path: ellipse(600px 240px at 50% 35%);
+}
